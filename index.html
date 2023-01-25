@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Advice generator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="quote-container">
+    <h4>
+      Advice #
+      <span class="adviceID">
+        <!-- Advice ID goes here -->
+      </span>       
+    </h4>
+
+    <div class="quote">
+      "<span class="quote-text">
+      </span>"
+    </div>
+
+    <div class="pattern-divider">
+      <img src="./images/pattern-divider-desktop.svg" alt="" role="img" class="desktop-divider"/>
+      <img src="./images/pattern-divider-mobile.svg" alt="" role="img" class="mobile-divider"/>
+    </div>
+
+    <div class="dice-container">
+      <img src="./images/icon-dice.svg" alt="" role="img" class="dice-img" />
+    </div>
+  </div>
+
+  <!-- Loader -->
+  <div id="loading" class="loader" hidden="true"></div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ChimeziemEmmanuella">Chimeziem Emmanuella</a>.
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>

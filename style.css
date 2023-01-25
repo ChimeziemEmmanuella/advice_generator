@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    font-family: 'Manrope', sans-serif;;
+}
+
+.quote-container {
+    position: relative;
+    width: auto;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: hsl(217, 19%, 24%);
+    box-shadow: 0px 0px 10px rgba(100, 98, 98, 0.1);
+}
+
+.quote-container h4 {
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+    color: hsl(150, 100%, 66%);
+}
+
+.quote-container .quote {
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.pattern-divider {
+    padding-bottom: 40px;
+}
+
+.dice-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+}
+
+.dice-container:hover {
+    box-shadow: 0px 0px 20px rgba(82, 255, 168, 0.7);
+
+}
+
+.attribution{
+    text-align: center;
+    padding: 40px;
+}
+
+/* Media Query: Mobile */
+@media screen and (max-width: 375px) {
+    .quote-container {
+        margin: auto 15px;
+    }
+
+    .attribution {
+        padding: 20px 0;
+        font-size: 0.7rem;
+    }
+
+    .mobile-divider {
+        display: block;
+        width: 100%;
+    }
+
+    .desktop-divider {
+        display: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .quote-container {
+        margin: auto 10px;
+    }
+
+    .mobile-divider {
+        display: block;
+        width: 100%;
+    }
+
+    .desktop-divider {
+        display: none;
+        width: 100%;
+    }
+}
+
+/* Media Query: desktop */
+@media screen and (min-width: 611px) {
+    .desktop-divider {
+        display: block;
+        width: 100%;
+    }
+
+    .mobile-divider{
+        display: none;
+        width: 100%;
+    }
+}
+
+/* Loader styles */
+#loading {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+}
+  
+@keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+}
